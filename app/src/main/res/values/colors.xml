@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0277BD</color>
+    <color name="colorPrimaryDark">#01579B</color>
+    <color name="colorAccent">#FFEB3B</color>
+
+
+    <color name="setting_title_text">#363636</color>
+    <color name="setting_content_text">#9A9A9A</color>
+
+    <color name="divider">#D3D3D3</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="tab_menu_bg">#424242</color>
+    <color name="trans_black">#33424242</color>
+    <color name="trans_black1">#33000000</color>
+    <color name="content_bg">#EDEFED</color>
+</resources>

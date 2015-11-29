@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.wanpg.together.CitySearchActivity"
+    android:background="@color/content_bg">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="3dp"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:id="@+id/et"
+                android:textColor="@android:color/black"
+                android:textColorHint="#9E9E9E"
+                android:hint="搜索城市名"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:background="@color/transparent"
+                android:layout_marginRight="8dp"
+                android:padding="5dp" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.wanpg.together.CitySearchActivity"
+        tools:showIn="@layout/activity_city_search">
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始探索"
+                android:textSize="24sp"
+                android:textColor="#424242"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入城市名称即可找寻你想要的旅伴"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="150dp"
+                android:textSize="18sp"
+                android:textColor="#616161"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#9E9E9E"
+            android:dividerHeight="0.5dp"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
